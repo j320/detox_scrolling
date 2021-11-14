@@ -14,6 +14,6 @@ describe('Scroll to element test', () => {
     await waitFor(element(by.id('image-3')))
       .toBeVisible()
       .whileElement(by.id('listBackground'))
-      .scroll(50, 'right');
+      .scroll(50, 'down');
   });
 });
