@@ -1,0 +1,38 @@
+{
+  "name": "detox_scrolling",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint .",
+    "ios:build": "detox build --configuration ios.sim.debug",
+    "ios:test": "detox test --configuration ios.sim.debug",
+    "ios:test:scrollToEdge": "detox test --configuration ios.sim.debug -t 'Attempt to reach the edge of the FlatList'",
+    "ios:test:scrollToElement": "detox test --configuration ios.sim.debug -t 'Attempt to scroll'",
+    "android:build": "detox build --configuration android.emu.debug",
+    "android:test": "detox test --configuration android.emu.debug",
+    "android:test:scrollToEdge": "detox test --configuration android.emu.debug -t 'Attempt to reach the edge of the FlatList'",
+    "android:test:scrollToElement": "detox test --configuration android.emu.debug -t 'Attempt to scroll'"
+  },
+  "dependencies": {
+    "react": "16.11.0",
+    "react-native": "facebook/react-native#c6f4611dcbfbb64d5b54e242570e2a1acffcabef"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/runtime": "^7.6.2",
+    "@react-native-community/eslint-config": "^0.0.5",
+    "babel-jest": "^24.9.0",
+    "detox": "^19.0.0",
+    "eslint": "^6.5.1",
+    "jest": "^27.3.1",
+    "metro-react-native-babel-preset": "^0.58.0",
+    "react-test-renderer": "16.11.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
