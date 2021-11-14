@@ -59,4 +59,4 @@ buck-out/
 /ios/Pods/
 
 # E2E
-/e2e/artifacts/
+artifacts/

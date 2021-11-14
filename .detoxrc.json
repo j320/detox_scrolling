@@ -1,19 +1,6 @@
 {
   "testRunner": "jest",
   "runnerConfig": "e2e/config.json",
-  "artifacts": {
-    "rootDir": "/e2e/artifacts/",
-    "plugins": {
-      "screenshot": {
-        "enabled": true,
-        "shouldTakeAutomaticSnapshots": true,
-        "keepOnlyFailedTestArtifacts": false,
-        "takeWhen": {
-          "testDone": true
-        }
-      }
-    }
-  },
   "configurations": {
     "ios.sim.debug": {
       "binaryPath": "ios/build/Build/Products/Debug-iphonesimulator/detox_scrolling.app",
